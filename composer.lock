@@ -1,0 +1,58 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "b69fe8987a58a0369f582adc9b1fec75",
+    "packages": [
+        {
+            "name": "orbisnull/orbistools",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orbisnull/orbistools.git",
+                "reference": "f272f51eb91027400ed3e3c82cc98aa8212b0576"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orbisnull/orbistools/zipball/f272f51eb91027400ed3e3c82cc98aa8212b0576",
+                "reference": "f272f51eb91027400ed3e3c82cc98aa8212b0576",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "OrbisTools": "src/"
+                }
+            },
+            "notification-url": "http://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Vasiliy Shvakin",
+                    "email": "zen4dev@gmail.com"
+                }
+            ],
+            "description": "request, session and other tools for web development",
+            "time": "2013-09-06 18:05:59"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "orbisnull/orbistools": 20
+    },
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}

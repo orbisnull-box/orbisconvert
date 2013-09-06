@@ -1,0 +1,17 @@
+{
+    "name": "orbisnull/orbisconvert",
+    "description": "transformers for objects",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "orbisnull",
+            "email": "zen4dev@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "OrbisConvert": "src/" }
+    },
+    "require": {
+        "orbisnull/orbistools": "dev-master"
+    }
+}
