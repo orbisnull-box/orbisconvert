@@ -62,11 +62,14 @@ class WebImage
     public function resizeAndScale($fileInput, $fileOutput, $width, $height = null)
     {
         $imgSize = self::getDimension($fileInput);
+        if (is_null($height)) {
+            $height = $width;
+        }
         $sharpen = ($imgSize['imgType'] === IMAGETYPE_PNG ) ? '' : '-unsharp 0x1';
         if (($width / $imgSize['width']) >= ($height / $imgSize['height'])) {
-            $command = "convert {$fileInput} -resize {$width}x -gravity center -crop {$width}x{$height} +0+0 {$sharpen} +repage {$fileOutput}";
+            $command = "convert {$fileInput} -resize {$width}x -gravity center -crop {$width}x{$height}+0+0 {$sharpen} +repage {$fileOutput}";
         } else {
-            $command = "convert {$fileInput} -resize x{$height} -gravity center -crop {$width}x{$height} +0+0 {$sharpen} +repage {$fileOutput}";
+            $command = "convert {$fileInput} -resize x{$height} -gravity center -crop {$width}x{$height}+0+0 {$sharpen} +repage {$fileOutput}";
         }
         $result =  $this->getFileConverter()->convert($fileInput, $command, $fileOutput);
         return $result;
