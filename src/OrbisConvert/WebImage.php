@@ -75,6 +75,13 @@ class WebImage
         return $result;
     }
 
+    public function resizeAndCrop($fileInput, $fileOutput, $width, $height)
+    {
+        $command = "convert #INPUT# -resize {$width}x{$height}^ \\
+          -gravity center -extent {$width}x{$height} #OUTPUT#";
+        return $this->getFileConverter()->convert($fileInput, $command, $fileOutput);
+    }
+
     public function optimize($file)
     {
         $imgSize = self::getDimension($file);
