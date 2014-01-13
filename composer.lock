@@ -3,29 +3,29 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "b69fe8987a58a0369f582adc9b1fec75",
+    "hash": "697c3ec1fa3f0c10eb54185263c1cf27",
     "packages": [
         {
-            "name": "orbisnull/orbistools",
+            "name": "deltaphp/deltautils",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/orbisnull/orbistools.git",
-                "reference": "f272f51eb91027400ed3e3c82cc98aa8212b0576"
+                "url": "https://github.com/DeltaPHP/DeltaUtils.git",
+                "reference": "1c82edc932cb4dcd7d40039e74214db98256861f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orbisnull/orbistools/zipball/f272f51eb91027400ed3e3c82cc98aa8212b0576",
-                "reference": "f272f51eb91027400ed3e3c82cc98aa8212b0576",
+                "url": "https://api.github.com/repos/DeltaPHP/DeltaUtils/zipball/1c82edc932cb4dcd7d40039e74214db98256861f",
+                "reference": "1c82edc932cb4dcd7d40039e74214db98256861f",
                 "shasum": ""
             },
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "OrbisTools": "src/"
+                    "DeltaUtils": "src/"
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0+"
             ],
@@ -35,8 +35,8 @@
                     "email": "zen4dev@gmail.com"
                 }
             ],
-            "description": "request, session and other tools for web development",
-            "time": "2013-09-06 18:05:59"
+            "description": "good tools and utils",
+            "time": "2014-01-11 17:04:19"
         }
     ],
     "packages-dev": [
@@ -47,7 +47,7 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "orbisnull/orbistools": 20
+        "deltaphp/deltautils": 20
     },
     "platform": [
 

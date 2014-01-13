@@ -6,7 +6,7 @@
 
 namespace OrbisConvert;
 
-use OrbisTools\FileConverter;
+use DeltaUtils\FileConverter;
 
 class WebImage
 {
