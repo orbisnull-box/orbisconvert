@@ -82,8 +82,17 @@ class WebImage
         return $this->getFileConverter()->convert($fileInput, $command, $fileOutput);
     }
 
+    public function origin($fileInput, $fileOutput)
+    {
+        $command = "ln -s #INPUT# #OUTPUT#";
+        return $this->getFileConverter()->exec($fileInput, $command, $fileOutput);
+    }
+
     public function optimize($file)
     {
+        if (is_link($file)) {
+            return false;
+        }
         $imgSize = self::getDimension($file);
         switch ($imgSize['imageType']) {
             case IMAGETYPE_JPEG :
