@@ -65,7 +65,7 @@ class WebImage
         if (is_null($height)) {
             $height = $width;
         }
-        $sharpen = ($imgSize['imgType'] === IMAGETYPE_PNG ) ? '' : '-unsharp 0x1';
+        $sharpen = ($imgSize['imageType'] === IMAGETYPE_PNG ) ? '' : '-unsharp 0x1';
         if (($width / $imgSize['width']) >= ($height / $imgSize['height'])) {
             $command = "convert {$fileInput} -resize {$width}x -gravity center -crop {$width}x{$height}+0+0 {$sharpen} +repage {$fileOutput}";
         } else {
